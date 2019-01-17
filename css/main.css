@@ -45,7 +45,7 @@ a {
 a.btn {
 	color: white;
 	background-color: #F7A720;
-	padding: 1em 1.5em;
+	padding: 1em 2.5em;
 	margin: 1.5em 0;
 	display: block;
 }
@@ -179,7 +179,7 @@ header .header-bottom {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	background-color: rgba(255, 255, 255, .75);
+	border-bottom: 3px solid #F7A720;
 }
 
 header .header-bottom.sticky {
@@ -190,7 +190,6 @@ header .header-bottom.sticky {
 	top: 0;
 	z-index: 9999;
 	width: 100%;
-	border-bottom: 3px solid #F7A720;
 }
 
 header .header-bottom .logo img {
@@ -199,11 +198,17 @@ header .header-bottom .logo img {
 	border-radius: 50%;
 	position: absolute;
 	top: 45%;
+	z-index: 9999;
+}
+
+header .header-bottom .logo img.logo-light {
+	width: 15%;
 }
 
 header .header-bottom .logo img.logo-sticky,
 header .header-bottom.sticky .logo img.logo-light {
 	display: none;
+
 }
 
 header .header-bottom.sticky .logo img.logo-sticky {
@@ -211,9 +216,11 @@ header .header-bottom.sticky .logo img.logo-sticky {
 	position: static;
 	border-radius: 0;
 	border: none;
-} 
+}
 
-header .header-bottom .main-menu {}
+header .header-bottom .main-menu li {
+	display: inline-block;
+}
 
 header .header-bottom .main-menu a {
 	margin: 0 .5em;
@@ -228,6 +235,10 @@ header .header-bottom .main-menu a:hover {
 	border-color: #F7A720;
 	padding: .5em;
 	transition: .25s;
+}
+
+header .header-bottom .main-menu a.menu-trigger {
+	display: none;
 }
 /*----*/
 

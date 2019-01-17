@@ -19,9 +19,29 @@
 	z-index: 9999;
 }
 
+.products-mob,
+.testimotials-mob,
+.instagram-mob {
+	display: none;
+}
+
 .products .wrapper,
 .testimotials .wrapper {
 	width: 100%;
+}
+
+.products .wrapper>a,
+.instagram .wrapper>a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.products .wrapper>a img,
+.instagram .wrapper>a img {
+	width: 1.5em;
+	margin-left: .5em;
+	margin-right: .5em;
 }
 
 .products .products-items a {
@@ -36,6 +56,7 @@
 
 .products .products-items .products-item img {
 	margin-bottom: 1em;
+	width: 100%;
 }
 
 .products .products-items .products-item:hover img {
@@ -110,7 +131,6 @@
 }
 
 .advantages {
-	padding-top: 2.5em;
 }
 
 .advantages .advantages-items .advantages-item {
@@ -120,6 +140,10 @@
 
 .advantages .advantages-items .advantages-item img {
 	width: 5em;
+}
+
+.advantages .advantages-items .advantages-item h3 {
+	color: white;
 }
 
 .to_order {
@@ -163,6 +187,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 1em;
 }
 
 .instagram .instagram-items .instagram-item:hover {
@@ -170,19 +195,12 @@
 	background-color: rgba(0, 0, 0, .75);
 }
 
-.instagram .wrapper>a {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.instagram .wrapper>a img {
-	width: 1.5em;
-	margin-left: .5em;
-}
-
 .contact-form {
 	background-image: url(../img/bckgrnd.jpg);
+}
+
+.contact-form form {
+	width: 100%;
 }
 
 .contact-form .form-group {
@@ -225,7 +243,6 @@
 }
 
 .contact-form input[type="submit"] {
-	text-transform: uppercase;
 	width: 100%;
 	border: none;
 	background-color: #F7A720;

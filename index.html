@@ -2,6 +2,8 @@
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="theme-color" content="#F7A720">
 		<title>Корзинка - кондитерская & пекарня</title>
 		<link href="img/icon.png" rel="shortcut icon">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800&amp;subset=cyrillic" rel="stylesheet">
@@ -32,10 +34,30 @@
 					</a>
 				</div>
 				<nav class="main-menu" id="main-menu">
-					<a href="#products">Наша продукция</a>
-					<a href="#testimotials">Отзывы</a>
-					<a href="#contact-form">Обратная связь</a>
-					<a href="#map">Адреса</a>
+					<a href="#" class="menu-trigger">&#9776;</a>
+					<ul>
+						<li>
+							<a href="#products">Наша продукция</a>
+						</li>
+						<li>
+							<div class="rect"></div>
+						</li>
+						<li>
+							<a href="#testimotials">Отзывы</a>
+						</li>
+						<li>
+							<div class="rect"></div>
+						</li>
+						<li>
+							<a href="#contact-form">Обратная связь</a>
+						</li>
+						<li>
+							<div class="rect"></div>
+						</li>
+						<li>
+							<a href="#map">Адреса</a>
+						</li>
+					</ul>
 				</nav>
 			</div>
 		</header>
@@ -70,27 +92,59 @@
 				<div class="wrapper">
 					<div class="products-items items">
 						<a href="#">
-						<div class="products-item item">
-							<img src="img/product_item-1.jpg" alt="Product Item">
-							<h3>Anything Product <sup>New!</sup></h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam iste, magni debitis quaerat autem.</p>
-						</div>
-						<a href="#">
-						<div class="products-item item">
-							<img src="img/product_item-2.jpg" alt="Product Item">
-							<h3>Anything Product <sup>New!</sup></h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam iste, magni debitis quaerat autem.</p>
-						</div>
+							<div class="products-item item">
+								<img src="img/product_item-1.jpg" alt="Product Item">
+								<h3>Anything Product <sup>New!</sup></h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam iste, magni debitis quaerat autem.</p>
+							</div>
 						</a>
 						<a href="#">
-						<div class="products-item item">
-							<img src="img/product_item-3.jpg" alt="Product Item">
-							<h3>Anything Product <sup>New!</sup></h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam iste, magni debitis quaerat autem.</p>
-						</div>
+							<div class="products-item item">
+								<img src="img/product_item-2.jpg" alt="Product Item">
+								<h3>Anything Product <sup>New!</sup></h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam iste, magni debitis quaerat autem.</p>
+							</div>
+						</a>
+						<a href="#">
+							<div class="products-item item">
+								<img src="img/product_item-3.jpg" alt="Product Item">
+								<h3>Anything Product <sup>New!</sup></h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam iste, magni debitis quaerat autem.</p>
+							</div>
 						</a>
 					</div>
-					<a href="#" class="btn">Вся продукция</a>
+					<a href="#" class="btn"><img src="img/pie.png" alt="Piece Icon">Вся продукция</a>
+				</div>
+			</div>
+			<div class="products products-mob block" id="products">
+				<h2 class="section-title">Наша продукция</h2>
+				<hr class="hr-main">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod quia voluptas ad deserunt, eius atqu.</p>
+				<div class="wrapper">
+					<div class="products-items items">
+						<a href="#">
+							<div class="products-item item">
+								<img src="img/product_item-1.jpg" alt="Product Item">
+								<h3>Anything Product <sup>New!</sup></h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam iste, magni debitis quaerat autem.</p>
+							</div>
+						</a>
+						<a href="#">
+							<div class="products-item item">
+								<img src="img/product_item-2.jpg" alt="Product Item">
+								<h3>Anything Product <sup>New!</sup></h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam iste, magni debitis quaerat autem.</p>
+							</div>
+						</a>
+						<a href="#">
+							<div class="products-item item">
+								<img src="img/product_item-3.jpg" alt="Product Item">
+								<h3>Anything Product <sup>New!</sup></h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam iste, magni debitis quaerat autem.</p>
+							</div>
+						</a>
+					</div>
+					<a href="#" class="btn"><img src="img/pie.png" alt="Piece Icon">Вся продукция</a>
 				</div>
 			</div>
 			<div class="features block block-clr">
@@ -105,7 +159,7 @@
 							<span>что-то там</span>
 						</div>
 						<div class="features-item item">
-							<span>1200</span>
+							<span>200</span>
 							<span>что-то там</span>
 						</div>
 						<div class="features-item item">
@@ -128,7 +182,7 @@
 									<h3><img src="img/tw-clr.png" alt="Twitter" class="icon">Анастасия Петрова</h3>
 									<img src="img/quotes.png" alt="Quotes" class="icon">
 								</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae tempora, perferendis. Magnam, deleniti enim autem modi quia quam optio, provident obcaecati quos, tempora nobis natus, repellat libero hic nam saepe.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae tempora, perferendis. Magnam, deleniti enim autem modi quia quam optio, provident obcaecati quos, tempora nobis natus, repellat libero hic nam saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis officia sapiente ab et excepturi ex nobis, quod harum dignissimos delectus qui iusto repellat fugit veniam temporibus, distinctio totam ipsam reiciendis.</p>
 							</div>
 						</div>
 						<div class="testimotials-item item">
@@ -138,7 +192,7 @@
 									<h3><img src="img/tw-clr.png" alt="Twitter" class="icon">Анастасия Петрова</h3>
 									<img src="img/quotes.png" alt="Quotes" class="icon">
 								</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae tempora, perferendis. Magnam, deleniti enim autem modi quia quam optio, provident obcaecati quos, tempora nobis natus, repellat libero hic nam saepe.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae tempora, perferendis. Magnam, deleniti enim autem modi quia quam optio, provident obcaecati quos, tempora nobis natus, repellat libero hic nam saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis officia sapiente ab et excepturi ex nobis, quod harum dignissimos delectus qui iusto repellat fugit veniam temporibus, distinctio totam ipsam reiciendis.</p>
 							</div>
 						</div>
 						<div class="testimotials-item item">
@@ -148,35 +202,72 @@
 									<h3><img src="img/tw-clr.png" alt="Twitter" class="icon">Анастасия Петрова</h3>
 									<img src="img/quotes.png" alt="Quotes" class="icon">
 								</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae tempora, perferendis. Magnam, deleniti enim autem modi quia quam optio, provident obcaecati quos, tempora nobis natus, repellat libero hic nam saepe.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae tempora, perferendis. Magnam, deleniti enim autem modi quia quam optio, provident obcaecati quos, tempora nobis natus, repellat libero hic nam saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis officia sapiente ab et excepturi ex nobis, quod harum dignissimos delectus qui iusto repellat fugit veniam temporibus, distinctio totam ipsam reiciendis.</p>
 							</div>
 						</div>
 					</div>
 					<a href="#" class="btn">Посмотреть все отзывы</a>
 				</div>
 			</div>
-			<!-- <div class="advantages block">
+			<div class="testimotials testimotials-mob block" id="testimotials">
+				<h2 class="section-title">Отзывы</h2>
+				<hr class="hr-main">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod quia voluptas ad deserunt, eius atqu.</p>
+				<div class="wrapper">
+					<div class="testimotials-items items">
+						<div class="testimotials-item item">
+							<div class="testimotials-author">
+								<img src="img/human.png" alt="Human">
+								<h3>Анастасия Петрова</h3>					
+							</div>
+							<div class="text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae tempora, perferendis. Magnam, deleniti enim autem modi quia quam optio, provident obcaecati quos, tempora nobis natus, repellat libero hic nam saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis officia sapiente ab et excepturi ex nobis, quod harum dignissimos delectus qui iusto repellat fugit veniam temporibus, distinctio totam ipsam reiciendis.</p>
+							</div>
+						</div>
+						<div class="testimotials-item item">
+							<div class="testimotials-author">
+								<img src="img/human.png" alt="Human">
+								<h3>Анастасия Петрова</h3>				
+							</div>
+							<div class="text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae tempora, perferendis. Magnam, deleniti enim autem modi quia quam optio, provident obcaecati quos, tempora nobis natus, repellat libero hic nam saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis officia sapiente ab et excepturi ex nobis, quod harum dignissimos delectus qui iusto repellat fugit veniam temporibus, distinctio totam ipsam reiciendis.</p>
+							</div>
+						</div>
+						<div class="testimotials-item item">
+							<div class="testimotials-author">
+								<img src="img/human.png" alt="Human">
+								<h3>Анастасия Петрова</h3>					
+							</div>
+							<div class="text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae tempora, perferendis. Magnam, deleniti enim autem modi quia quam optio, provident obcaecati quos, tempora nobis natus, repellat libero hic nam saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis officia sapiente ab et excepturi ex nobis, quod harum dignissimos delectus qui iusto repellat fugit veniam temporibus, distinctio totam ipsam reiciendis.</p>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="btn">Посмотреть все отзывы</a>
+				</div>
+			</div>
+			<div class="advantages block block-clr">
 				<div class="wrapper">
 					<div class="advantages-items items">
 						<div class="advantages-item item">
 							<img src="img/excellence.png" alt="" class="icon">
-							<h3>Качественное говно</h3>
+							<h3>Качественные продукты</h3>
 						</div>
 						<div class="advantages-item item">
 							<img src="img/excellence.png" alt="" class="icon">
-							<h3>Качественное говно</h3>
+							<h3>Качественные продукты</h3>
 						</div>
 						<div class="advantages-item item">
 							<img src="img/excellence.png" alt="" class="icon">
-							<h3>Качественное говно</h3>
+							<h3>Качественные продукты</h3>
 						</div>
 						<div class="advantages-item item">
 							<img src="img/excellence.png" alt="" class="icon">
-							<h3>Качественное говно</h3>
+							<h3>Качественные продукты</h3>
 						</div>
 					</div>
 				</div>
-			</div> -->
+			</div>
 			<div class="to_order block block-img">
 				<div class="wrapper">
 					<p>У нас можно заказать красивый торт! Заказывайте.</p>
@@ -184,6 +275,34 @@
 				</div>
 			</div>
 			<div class="instagram block">
+				<h2 class="section-title">Наш Instagram</h2>
+				<hr class="hr-main">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod quia voluptas ad deserunt, eius atqu.</p>
+				<div class="wrapper">
+					<div class="instagram-items items">
+						<a href="#" class="instagram-item item">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod quia voluptas ad deserunt, eius atqu.</h4>
+						</a>
+						<a href="#" class="instagram-item item">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod quia voluptas ad deserunt, eius atqu.</h4>
+						</a>
+						<a href="#" class="instagram-item item">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod quia voluptas ad deserunt, eius atqu.</h4>
+						</a>
+						<a href="#" class="instagram-item item">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod quia voluptas ad deserunt, eius atqu.</h4>
+						</a>
+						<a href="#" class="instagram-item item">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod quia voluptas ad deserunt, eius atqu.</h4>
+						</a>
+						<a href="#" class="instagram-item item">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod quia voluptas ad deserunt, eius atqu.</h4>
+						</a>
+					</div>
+					<a href="#" class="btn" title="Instagram">Перейти к <img src="img/insta.png" alt="Instagram"></a>
+				</div>
+			</div>
+			<div class="instagram instagram-mob block">
 				<h2 class="section-title">Наш Instagram</h2>
 				<hr class="hr-main">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod quia voluptas ad deserunt, eius atqu.</p>
@@ -237,7 +356,7 @@
 				<a href="#home" id="btn-top" class="btn-top top-footer"><img src="img/arrow.png" alt="Arrow Icon"></a>
 			</div>	
 			<div class="bottom-footer">
-				<span class="clr">Корзин-ка,</span>
+				<span class="clr">Корзин-Ка,</span>
 				<span>2019 <br>Все права защищены.</span>
 			</div>
 		</footer>
