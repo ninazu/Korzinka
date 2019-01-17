@@ -1,0 +1,205 @@
+.main-slider img {
+	width: 100%;
+}
+
+.main-slider .notes {
+	text-align: center;
+	background-color: rgba(255, 255, 255, .25);
+	position: absolute;
+	top: 85%;
+	width: 14.5%;
+	z-index: 9999;
+	padding: 1.5em 0;
+}
+
+.products .wrapper,
+.testimotials .wrapper {
+	width: 100%;
+}
+
+.products .products-items a {
+	color: #303030;
+}
+
+.products .products-items .products-item {
+	background-color: #eee;
+}
+
+.products .products-items .products-item sup {
+	color: #4EBD46;
+}
+
+.products .products-items .products-item p {
+	padding: 0 1em .5em 1em;
+	display: block;
+}
+
+.features .features-items .features-item span {
+	display: block;
+}
+
+.features .features-items .features-item span:first-child {
+	font-size: 5em;
+}
+
+.features .features-items .features-item span:last-child {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.testimotials {
+	padding-bottom: 2.5em; 
+}
+
+.testimotials .testimotials-items {
+	display: block;
+}
+
+.testimotials .testimotials-items .testimotials-item {
+	display: flex;
+	text-align: left;
+	padding: 1em;
+	background-color: #eee;
+	margin: 1em;
+}
+
+.testimotials .testimotials-items .testimotials-item .title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.testimotials .testimotials-items .testimotials-item img:not(.icon) {
+	width: 5em;
+	height: 5em;
+	border-radius: 50%;
+	border: 3px solid #F7A720;
+	padding: .5em;
+	margin-right: 1em;
+} 
+
+.testimotials .testimotials-items .testimotials-item h3 {
+	display: flex;
+	align-items: center;
+}
+
+.testimotials .testimotials-items .testimotials-item h3>img {
+	margin-right: .25em;
+}
+
+.testimotials .testimotials-items .testimotials-item p {
+	color: black;
+}
+
+.advantages {
+	padding-top: 2.5em;
+}
+
+.advantages .advantages-items .advantages-item {
+	padding: 1em;
+	border-radius: .5em;
+}
+
+.advantages .advantages-items .advantages-item img {
+	width: 5em;
+}
+
+.to_order {
+	padding: 7.5em;
+	background-image: url(../img/bckgrnd.jpg);
+}
+
+.to_order p {
+	font-size: 2em;
+}
+
+.to_order a {
+	width: 25%;
+	background-color: #4EBD46;
+	margin: 2.5em auto 0 auto;
+}
+
+.instagram .instagram-items {
+	flex-wrap: wrap;
+}
+
+.instagram .instagram-items .instagram-item {
+	width: 22.5em;
+	height: 22.5em;
+	margin: .75em 0em;
+	background-image: url(../img/insta-post.jpg);
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: overlay;
+	background-repeat: no-repeat;
+	color: transparent;
+	transition: .25s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.instagram .instagram-items .instagram-item:hover {
+	color: white;
+	background-color: rgba(0, 0, 0, .75);
+}
+
+.contact-form {
+	background-image: url(../img/bckgrnd.jpg);
+}
+
+.contact-form .form-group {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="phone"],
+.contact-form textarea,
+.contact-form input[type="submit"] {
+	padding: 1em .5em;
+	font-size: 1em;
+	outline: none;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="phone"]:focus,
+.contact-form textarea:focus {
+	border-color: #F7A720;
+	color: #F7A720;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="phone"] {
+	width: 40%;
+	display: block;
+	color: #505050;
+	border: 1px solid #c3c3c3;
+	margin-top: 1em;
+}
+
+.contact-form textarea {
+	width: 100%;
+	resize: none;
+	height: 10em;
+	border: 1px solid #c3c3c3;
+	margin: 1em 0;
+}
+
+.contact-form input[type="submit"] {
+	text-transform: uppercase;
+	width: 100%;
+	border: none;
+	background-color: #F7A720;
+	opacity: 1;
+	color: white;
+	transition: .25s;
+	margin-bottom: 1em;
+	cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+	opacity: .9;
+	text-decoration: underline;
+}

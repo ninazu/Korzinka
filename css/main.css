@@ -1,0 +1,237 @@
+/*Общие стили*/
+* {
+	margin: 0;
+	outline: none;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1.tagline {}
+
+h2.section-title {
+	color: #F7A720;
+	text-transform: uppercase;
+	line-height: 1em;
+}
+
+h3 {
+	color: #F7A720;
+	text-transform: uppercase;
+}
+
+h4 {}
+
+hr {
+	border: none;
+	height: 5px;
+	background-color: #F7A720;
+	margin: 1em 0;
+}
+
+hr.hr-main {
+	width: 2.5%;
+	margin: 1em auto;
+}
+
+body {}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a.btn {
+	color: white;
+	background-color: #F7A720;
+	padding: 1em 1.5em;
+	margin: 1.5em 0;
+	display: block;
+}
+
+a.btn:hover {
+	text-decoration: underline;
+	opacity: .9;
+	transition: .25s;
+}
+
+p {
+	line-height: 1.5em;
+}
+
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.block {
+	padding: 5em 2.5em;
+	text-align: center;
+	color: white;
+}
+
+.block>p {
+	font-style: italic;
+	color: black;
+	margin: 1em 0;
+}
+
+.block-img {
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-blend-mode: overlay;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.block-img>p {
+	color: white;
+}
+
+.block-clr {
+	background-color: #F7A720;
+}
+
+.clr {
+	color: #F7A720;
+}
+
+.clr-blc {
+	color: black;
+}
+
+.items {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.item {
+	margin: 0 1em;
+}
+
+.rect {
+	width: .5em;
+	height: .5em;
+	background-color: #F7A720;
+	transform: rotate(45deg);
+	margin: 0 1em;
+}
+
+.icon {
+	width: 1.5em;
+}
+
+.crumbs {}
+
+.crumbs a {
+	color: white;
+}
+
+.crumbs a:hover {
+	text-decoration: underline;
+}
+
+.crumbs .sl {
+	margin: 0 .5em;
+	color: white;
+}
+/*----*/
+
+/*Стили "шапки"*/
+header {
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+}
+
+header .header-top {
+	background-color: black;
+	padding: .5em 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .header-top .number {
+	margin-left: .5em;
+	color: white;
+}
+
+header .header-top .social a {
+	margin: 0 .5em;
+}
+
+header .header-top .social img {
+	border-radius: 50%;
+	border: 3px solid #F7A720;
+}
+
+header .header-top .social img:hover {
+	background-color: #F7A720;
+	transition: .25s;
+}
+
+header .header-bottom {
+	padding: 2.5em 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgba(255, 255, 255, .75);
+}
+
+header .header-bottom .logo img {
+	width: 10em;
+	border: 3px solid #F7A720;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+}
+
+header .header-bottom .main-menu {}
+
+header .header-bottom .main-menu a {
+	margin: 0 .5em;
+	padding: 1.5em .5em;
+	color: #F7A720;
+	text-transform: uppercase;
+	border-bottom: 3px solid transparent;
+	font-weight: bold;
+}
+
+header .header-bottom .main-menu a:hover {
+	border-color: #F7A720;
+	padding: .5em;
+	transition: .25s;
+}
+/*----*/
+
+/*Стили "подвала"*/
+footer {
+	text-align: center;
+}
+
+footer .btn-top {
+	display: block;
+	padding: .25em 0;
+	transition: .25s;
+	margin-bottom: .5em;
+}
+
+footer .btn-top:hover {
+	background-color: rgba(0, 0, 0, .125);
+}
+
+footer .btn-top img {
+	width: 2.5em;
+}
+/*----*/
+
+/*
+#F1C530;
+#DC8123;
+#5E3916;
+#4EBD46;
+*/
