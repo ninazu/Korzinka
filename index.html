@@ -25,13 +25,17 @@
 				</div>
 			</div>
 			<div class="header-bottom">
-				<a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
-				<nav class="main-menu">
-					<a href="#">Наша продукция</a>
-					<a href="#">Наши адреса</a>
-					<a href="#">Наша история</a>
-					<a href="#">Новости</a>
-					<a href="#">Отзывы</a>
+				<div id="logo">
+					<a href="#home" class="logo">
+						<img src="img/logo-light.png" alt="Logo" class="logo-light">
+						<img src="img/logo-sticky.png" alt="Logo" class="logo-sticky">
+					</a>
+				</div>
+				<nav class="main-menu" id="main-menu">
+					<a href="#products">Наша продукция</a>
+					<a href="#testimotials">Отзывы</a>
+					<a href="#contact-form">Обратная связь</a>
+					<a href="#map">Адреса</a>
 				</nav>
 			</div>
 		</header>
@@ -59,7 +63,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="products block">
+			<div class="products block" id="products">
 				<h2 class="section-title">Наша продукция</h2>
 				<hr class="hr-main">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod quia voluptas ad deserunt, eius atqu.</p>
@@ -111,7 +115,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="testimotials block">
+			<div class="testimotials block" id="testimotials">
 				<h2 class="section-title">Отзывы</h2>
 				<hr class="hr-main">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod quia voluptas ad deserunt, eius atqu.</p>
@@ -175,8 +179,8 @@
 			</div> -->
 			<div class="to_order block block-img">
 				<div class="wrapper">
-					<p>У нас можно заказать ахуенный торт! Заказывайте.</p>
-					<a href="#" class="btn">Заказать тортик</a>
+					<p>У нас можно заказать красивый торт! Заказывайте.</p>
+					<a href="#" class="btn"><img src="img/order.png" alt="To Order">Заказать тортик</a>
 				</div>
 			</div>
 			<div class="instagram block">
@@ -204,9 +208,10 @@
 							<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod quia voluptas ad deserunt, eius atqu.</h4>
 						</a>
 					</div>
+					<a href="#" class="btn" title="Instagram">Перейти к <img src="img/insta.png" alt="Instagram"></a>
 				</div>
 			</div>
-			<div class="contact-form block block-img">
+			<div class="contact-form block block-img" id="contact-form">
 				<h2 class="section-title">Обратная связь</h2>
 				<hr class="hr-main">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod quia voluptas ad deserunt, eius atqu.</p>
@@ -223,9 +228,14 @@
 					</form>
 				</div>
 			</div>
+			<div class="map" id="map">
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0b446a76da2246928af3b2c4ac2ff70edaf3c1ae4a603c7e5c893cb753d675ca&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+			</div>
 		</main>
 		<footer>
-			<a href="#home" id="btn-top" class="btn-top top-footer"><img src="img/arrow.png" alt="Arrow Icon"></a>
+			<div id="scroll-top">
+				<a href="#home" id="btn-top" class="btn-top top-footer"><img src="img/arrow.png" alt="Arrow Icon"></a>
+			</div>	
 			<div class="bottom-footer">
 				<span class="clr">Корзин-ка,</span>
 				<span>2019 <br>Все права защищены.</span>

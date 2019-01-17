@@ -1,15 +1,22 @@
 .main-slider img {
 	width: 100%;
+	filter: brightness(50%);
 }
 
 .main-slider .notes {
 	text-align: center;
-	background-color: rgba(255, 255, 255, .25);
 	position: absolute;
-	top: 85%;
-	width: 14.5%;
+	top: 80%;
+	width: 14.3%;
 	z-index: 9999;
 	padding: 1.5em 0;
+	color: white;
+}
+
+.main-slider .slick-dots {
+	position: absolute;
+	top: 92.5%;
+	z-index: 9999;
 }
 
 .products .wrapper,
@@ -23,6 +30,17 @@
 
 .products .products-items .products-item {
 	background-color: #eee;
+	overflow: hidden;
+	margin-top: 1em;
+}
+
+.products .products-items .products-item img {
+	margin-bottom: 1em;
+}
+
+.products .products-items .products-item:hover img {
+	transform: scale(1.05);
+	transition: .5s;
 }
 
 .products .products-items .products-item sup {
@@ -117,6 +135,14 @@
 	width: 25%;
 	background-color: #4EBD46;
 	margin: 2.5em auto 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.to_order img {
+	width: 2em;
+	margin-right: .5em;
 }
 
 .instagram .instagram-items {
@@ -142,6 +168,17 @@
 .instagram .instagram-items .instagram-item:hover {
 	color: white;
 	background-color: rgba(0, 0, 0, .75);
+}
+
+.instagram .wrapper>a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.instagram .wrapper>a img {
+	width: 1.5em;
+	margin-left: .5em;
 }
 
 .contact-form {
@@ -202,4 +239,9 @@
 .contact-form input[type="submit"]:hover {
 	opacity: .9;
 	text-decoration: underline;
+}
+
+.map {
+	background-color: #F7A720;
+	padding: .5em 0;
 }
