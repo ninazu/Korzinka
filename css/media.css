@@ -61,7 +61,7 @@
 }
 
 @media screen and (max-width: 1050px) {
-	header .header-bottom .main-menu a.menu-trigger {
+	header .main-menu a.menu-trigger {
 		display: block;
 		font-size: 2.5em;
 		color: #F7A720;
@@ -69,46 +69,46 @@
 		right: .25em;
 		top: 1.5em;
 		padding: 0 .25em;
-		z-index: 9010;
+		z-index: 40;
 	}
 
-	header .header-bottom.sticky .main-menu a.menu-trigger {
+	header.sticky .main-menu a.menu-trigger {
 		top: .5em;
 	}
 	
-	header .header-bottom .main-menu ul {
+	header .main-menu ul {
 		display: none;
 		position: fixed;
-		z-index: 9020;
+		z-index: 40;
 		right: 0;
 		top: 8.25em;
 		width: 100%;
 		background-color: white;
 	}
 	
-	header .header-bottom.sticky .main-menu ul {
+	header.sticky .main-menu ul {
 		top: 6em;
 	}
 
-	header .header-bottom .main-menu ul .rect {
+	header .main-menu ul .rect {
 		display: none;
 	}
 
-	header .header-bottom .main-menu ul li {
+	header .main-menu ul li {
 		display: block;
 		text-align: right;
 	}
 	
-	header .header-bottom .main-menu ul li:hover {
+	header .main-menu ul li:hover {
 		background-color: #F7A720;
 	}
 
-	header .header-bottom .main-menu ul li:hover > a {
+	header .main-menu ul li:hover > a {
 		color: white;
 	}
 
-	header .header-bottom .main-menu ul a,
-	header .header-bottom .main-menu ul a:hover {
+	header .main-menu ul a,
+	header .main-menu ul a:hover {
 		padding: 1em;
 		display: block;
 		border: none;
@@ -143,7 +143,7 @@
 		position: static;
 	}
 	
-	header .header-bottom .logo img {
+	header .logo img {
 		top: 15%;
 	}
 
@@ -240,11 +240,11 @@
 }
 
 @media screen and (max-width: 475px) {
-	header .header-bottom .logo img {
+	header .logo img {
 		top: 65%;
 	}
 
-	header .header-bottom .main-menu ul {
+	header .main-menu ul {
 		top: 12.75em;
 	}
 
@@ -256,26 +256,11 @@
 		top: 85%;
 	}
 
-	header .header-top {
-		display: block;
-		text-align: center;
-	}
-	
-	header .header-top .number,
-	header .header-top .social {
-		margin: 1em 0;
-	}
-
-	header .header-top .number span,
-	header .header-top .social a {
-		margin: .5em auto;
-	}
-
-	header .header-bottom .logo img {
+	header .logo img {
 		top: 30%;
 	}
 
-	header .header-bottom .main-menu a.menu-trigger {
+	header .main-menu a.menu-trigger {
 		top: 3.5em;
 	}
 }
