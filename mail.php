@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
    <title>Ваше сообщение успешно отправлено</title>
 </head>
    <body>
@@ -20,7 +20,7 @@
          mail('faridnagiyev99@gmail.com', 'Korzin-ka', 
          'Вам написал: '.$name.'<br>
          Его номер: '.$phone.'<br>
-         Его сообщение: '.$message,"Content-type:text/html;charset=UTF-8");
+         Его сообщение: '.$message,"Content-type:text/html;charset=windows-1251");
  
       echo "Ваше сообщение успешно отправлено! Вы получите ответ в 
       ближайшее время
