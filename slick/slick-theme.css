@@ -148,6 +148,8 @@
     width: 20px;
     height: 20px;
     content: '•';
+    border-radius: 50%;
+    background-color: white;
     text-align: center;
     opacity: .25;
     color: #F7A720;
