@@ -11,7 +11,7 @@ $paramsMap = [
 ];
 
 foreach ($paramsMap as $key => $title) {
-	$value = trim(strip_tags($_REQUEST[$key]));
+	$value = trim(strip_tags(@$_REQUEST[$key]));
 
 	if (empty($value)) {
 		echo json_encode(['success' => false]);
@@ -22,9 +22,20 @@ foreach ($paramsMap as $key => $title) {
 	$params[] = "{$title}: {$value}";
 }
 
-$transport = (new Swift_SmtpTransport($config['mail']['smtp'], $config['mail']['port']))
-	->setUsername($config['mail']['username'])
-	->setPassword($config['mail']['password']);
+$transport = (new Swift_SmtpTransport(
+	$config['mail']['smtp'],
+	$config['mail']['port'],
+	$config['mail']['encryption']
+))
+	->setUsername($config['mail']['user'])
+	->setPassword($config['mail']['pass'])
+	->setStreamOptions(
+		[
+			'ssl' => [
+				'allow_self_signed' => true,
+				'verify_peer' => false,
+			],
+		]);
 
 $mailer = new Swift_Mailer($transport);
 

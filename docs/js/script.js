@@ -1,8 +1,9 @@
-$('#myForm').submit(function() {
+$('#myForm').submit(function(e) {
 	$.ajax({
-		"url": "ajax.php",
-		"method": "post",
-		"success": function(e) {
+		url: "ajax.php",
+		method: "post",
+		data: $(this).serialize(),
+		success: function(e) {
 			console.log(e);
 		}
 	});

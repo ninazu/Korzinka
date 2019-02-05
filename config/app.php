@@ -6,7 +6,8 @@ return array_replace_recursive([
 		'user' => null,
 		'pass' => null,
 		'port' => 587,
+		'encryption' => 'tls',
 	],
-	'adminEmail' => 'faridnagiyev99@gmail.com',
+	'adminEmail' => null,
 	'applicationName' => 'Korzin-ka',
 ], require __DIR__ . '/app_secret.php');
