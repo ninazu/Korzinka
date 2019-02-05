@@ -1,6 +1,6 @@
 1. в корне ```composer install```
 2. **WebRoot** ведет на **public_html**
-3. добавить **app_secret.php** на сервере рядом с app.php (исключен из Git)
+3. добавить **config/app_secret.php** на сервере (исключен из Git)
 ```
 <?php
 
