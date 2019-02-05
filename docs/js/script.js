@@ -1,7 +1,17 @@
+$('#myForm').submit(function() {
+	$.ajax({
+		"url": "ajax.php",
+		"method": "post",
+		"success": function(e) {
+			console.log(e);
+		}
+	});
 
+	return false; //Cancel Submit
+});
 
 // Фиксированная "шапка"
-$(window).scroll(function () {
+$(window).scroll(function() {
 	if ($(this).scrollTop() > 1) {
 		$('header').addClass("sticky");
 	} else {
@@ -16,18 +26,18 @@ $(document).ready(function() {
 	});
 
 	$(window).resize(function() {
-		if ($(window).width > 960 ) {
+		if ($(window).width > 960) {
 			$('nav ul').removeAttr('style');
 		}
 	});
 });
 
 // Плавные "якоря"
-$(document).ready(function () {
-	$("#logo, #main-menu, #scroll-top, #order").on("click", "a", function (event) {
+$(document).ready(function() {
+	$("#logo, #main-menu, #scroll-top, #order").on("click", "a", function(event) {
 		event.preventDefault();
 		var id = $(this).attr('href');
-		var	top = $(id).offset().top
+		var top = $(id).offset().top
 		$('body,html').animate({
 			scrollTop: top
 		}, 1000);
@@ -37,9 +47,9 @@ $(document).ready(function () {
 // Слайдер "спец. предложений"
 $('.main-slider').slick({
 	infinite: true,
-  	slidesToShow: 1,
-  	slidesToScroll: 1,
-  	arrows: false,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	arrows: false,
 	draggable: false,
 	autoplay: true,
 	autoplaySpeed: 4000,
@@ -51,9 +61,9 @@ $('.main-slider').slick({
 // Слайдер "продукции"
 $('.products .products-items').slick({
 	infinite: true,
-  	slidesToShow: 3,
-  	slidesToScroll: 1,
-  	arrows: true,
+	slidesToShow: 3,
+	slidesToScroll: 1,
+	arrows: true,
 	draggable: false,
 	autoplay: true,
 	autoplaySpeed: 4000,
@@ -63,9 +73,9 @@ $('.products .products-items').slick({
 // Слайдер "продукции" (мобильная версия)
 $('.products-mob .products-items').slick({
 	infinite: true,
-  	slidesToShow: 1,
-  	slidesToScroll: 1,
-  	arrows: true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	arrows: true,
 	draggable: false,
 	autoplay: true,
 	autoplaySpeed: 4000,
@@ -76,9 +86,9 @@ $('.products-mob .products-items').slick({
 // Слайдер "отзывов" (мобильная версия)
 $('.testimotials-mob .testimotials-items').slick({
 	infinite: true,
-  	slidesToShow: 1,
-  	slidesToScroll: 1,
-  	arrows: false,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	arrows: false,
 	draggable: false,
 	autoplay: true,
 	autoplaySpeed: 4000,
@@ -89,9 +99,9 @@ $('.testimotials-mob .testimotials-items').slick({
 // Слайдер "Instagram" (мобильная версия)
 $('.instagram-mob .instagram-items').slick({
 	infinite: true,
-  	slidesToShow: 1,
-  	slidesToScroll: 1,
-  	arrows: true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	arrows: true,
 	draggable: false,
 	autoplay: true,
 	autoplaySpeed: 4000,
@@ -112,16 +122,20 @@ showSlides(slideIndex);
 function showSlides(index) {
 	if (index > slides.length) {
 		slideIndex = 1;
-	};
+	}
+	;
 	if (index < 1) {
 		slideIndex = slides.length;
-	};
+	}
+	;
 	for (let i = 0; i < slides.length; i++) {
 		slides[i].style.display = 'none';
-	};
+	}
+	;
 	for (let i = 0; i < dots.length; i++) {
 		dots[i].classList.remove('dot-active')
-	};
+	}
+	;
 	slides[slideIndex - 1].style.display = 'block';
 	dots[slideIndex - 1].classList.add('dot-active');
 }
@@ -134,7 +148,7 @@ function currentSlide(index) {
 	showSlides(slideIndex = index);
 }
 
-dotsWrap.addEventListener('click', function (event) {
+dotsWrap.addEventListener('click', function(event) {
 	for (let i = 0; i < dots.length + 1; i++) {
 		if (event.target.classList.contains('dot') && event.target == dots[i - 1]) {
 			currentSlide(i);

@@ -1,3 +1,7 @@
 .idea
 composer.phar
+
+#uncomment after move to PrivateHosting
 #vendor
+config/*_secret.php
+public_html
