@@ -2,4 +2,3 @@
 composer.phar
 vendor
 config/*_secret.php
-public_html

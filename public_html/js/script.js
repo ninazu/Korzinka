@@ -3,8 +3,14 @@ $('#myForm').submit(function(e) {
 		url: "ajax.php",
 		method: "post",
 		data: $(this).serialize(),
-		success: function(e) {
-			console.log(e);
+		success: function(data) {
+			let result = $.parseJSON(data);
+
+			if (result.success) {
+				alert("Всё ок");
+			}else{
+				alert("Что-то пошло не так");
+			}
 		}
 	});
 
